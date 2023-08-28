@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(246, 240, 233);
+    }
+    svg{
+        width: 30px;
+        height: 30px;
+    }
+    /********************************************************** home about section here ********************************************************/
+    .about-us {
+        margin: 90px 0;
+    }
+
+    .about-us .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-us-inside {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .decs{
+        font-size: 18px;
+    }
+    .about-us-content {
+        width: 540px;
+    }
+    .about-us-content h1{
+        font-size: 46px;
+    }
+    .about-us-img img {
+        border-radius: 15px;
+    }
+
+    /******************************************************************counter css here  ******************************************************/
+    .counter {
+        padding-top: 10px;
+    }
+    .counter h2{
+        font-size: 36px;
+    }
+    .counter-1 {
+        background-color: black;
+        color: rgb(248, 249, 242);
+        text-align: center;
+        height: 20vh;
+
+    }
+
+    .counter-inside {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        font-size: 22px;
+    }
+
+    /**********************************************************************our services********************************************************/
+    .our-serivces {
+        margin: 90px 0;
+    }
+
+    .our-serivces-items {
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    }
+
+    .our-services-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .container h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .serivces-images img {
+        border-radius: 5px;
+    }
+
+    /******************************************************************** News Letter **********************************************************/
+    .newsletter {
+        font-size: 25px;
+        background-color: black;
+        color: white;
+        height: 14vh;
+    }
+
+    .newsletter-inside h3 {
+        padding-top: 15px;
+        text-align: center;
+        color: rgb(247, 92, 92);
+    }
+
+    .form-row {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .form-row input {
+        width: 20%;
+        height: 3vh;
+        border-radius: 7px;
+
+    }
+
+    .form-row input:focus {
+        outline: 2px solid rgb(155, 248, 248);
+    }
+
+    .form-row button:hover {
+        transition: 0.5s;
+        background-color: rgb(155, 248, 248);
+        cursor: pointer;
+    }
+
+    .form-row button {
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    /*************************************************************** updates ******************************************************************/
+    .updates-images img {
+        aspect-ratio: 1.1;
+        max-width: 412px;
+        max-height: 373px;
+        object-fit: cover;
+    }
+
+    .updates {
+        margin-top: 90px;
+    }
+
+    .updates-main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+
+    }
+    .updates-content p{
+       padding: 0 5px;
+    }
+    .updates-items {
+        border: 1px solid grey;
+        border-radius: 8px;
+        background-color: rgba(250, 250, 245, 0.912);
+        box-shadow: 0 4px 8px 0 rgb(24 1 1 / 20%), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .updates-date-share {
+        display: flex;
+        margin: 0 5px;
+        justify-content: space-between;
+    }
+    .updates-date-share a{
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(88, 88, 87);
+    }
+    .btn{
+        font-size: 26px;
+        margin: 60px 0px;
+        text-decoration: none;
+        padding: 10px 35px;
+        background-color: black;
+        color: white;
+        width: fit-content;
+    }
+    .a-btn{
+        display: flex;
+        justify-content: center;
+    }
+    .btn:hover{
+        transition: 0.5s;
+        background-color: rgb(155, 248, 248);
+        color: black;
+    }
+    /****************************************************** slider*****************************************************************************/
+    .logo-slider-inner{
+        display: flex;
+    }
+    .logo-slider .title{
+        margin: 50px 0;
+        font-size: 29px;
+        font-weight: 900;
+        text-align: center;
+
+    }
+</style>
+
+<body>
+    <!-- Home About Section Here-->
+
+    <div class="about-us spad">
+        <div class="container">
+            <div class="about-us-inside">
+                <div class="about-us-img">
+                    <img src="images/About-us.jpg" srcset="images/About-us.jpg 480w, images/About-us.jpg 800w"
+                        sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" width="540px" height="360px"
+                        alt="Social-Parsh" itemprop="image">
+                </div>
+                <div class="about-us-content">
+                    <div class="title">
+                        <h1> Welcome to Lorem Ipsum Dolor Sit Armt</h1>
+                    </div>
+                    <div class="decs">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home About Section End-->
+
+
+    <!-- Counter Number Here-->
+    <div class="counter-1">
+        <div class="counter">
+            <h2>Relative Customer</h2>
+            <div class="counter-inside">
+                <div class="count-up">
+                    <div class="counter-count">1000</div>
+                    <div class="counter-text">Google</div>
+                </div>
+                <div class="count-up">
+                    <div class="counter-count">1000</div>
+                    <div class="counter-text">Google</div>
+                </div>
+                <div class="count-up">
+                    <div class="counter-count">1000</div>
+                    <div class="counter-text">Google</div>
+                </div>
+                <div class="count-up">
+                    <div class="counter-count">1000</div>
+                    <div class="counter-text">Google</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Conter Number End-->
+
+
+
+    <!-- Our Services -->
+    <div class="our-serivces spad">
+        <div class="container">
+            <h2 class="title">Our Services</h2>
+            <div class="our-services-main">
+                <div class="our-serivces-items" itemscope="" itemtype="http://schema.org/Product">
+                    <div class="serivces-images">
+                        <img src="images/serivces.jpg" loading="lazy" alt="Social-Parsh" width="321px" height="214px"
+                            itemprop="image">
+                    </div>
+                    <div class="serivces-content">
+                        <h3 class="title" itemprop="brand">Lorem Ipsum Dolor Sit</h3>
+                    </div>
+                    <div class="services-btn">
+                        <a href="productdetails.html" itemprop="url" class="text-link">View Product</a>
+                    </div>
+                </div>
+                <div class="our-serivces-items" itemscope="" itemtype="http://schema.org/Product">
+                    <div class="serivces-images">
+                        <img src="images/serivces.jpg" loading="lazy" alt="Social-Parsh" width="321px" height="214px"
+                            itemprop="image">
+                    </div>
+                    <div class="serivces-content">
+                        <h3 class="title" itemprop="brand">Lorem Ipsum Dolor Sit</h3>
+                    </div>
+                    <div class="services-btn">
+                        <a href="productdetails.html" itemprop="url" class="text-link">View Product</a>
+                    </div>
+                </div>
+                <div class="our-serivces-items" itemscope="" itemtype="http://schema.org/Product">
+                    <div class="serivces-images">
+                        <img src="images/serivces.jpg" loading="lazy" alt="Social-Parsh" width="321px" height="214px"
+                            itemprop="image">
+                    </div>
+                    <div class="serivces-content">
+                        <h3 class="title" itemprop="brand">Lorem Ipsum Dolor Sit</h3>
+                    </div>
+                    <div class="services-btn">
+                        <a href="productdetails.html" itemprop="url" class="text-link">View Product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------- Our Services en -------------------------------------------------------->
+
+
+
+    <!--------------------------------------------------------------- News Letter Here -------------------------------------------------------->
+    <div class="newsletter">
+        <div class="container">
+            <div class="newsletter-inside">
+                <h3 class="title">Subscribe Our Newsletter</h3>
+                <form method="post" id="newsletter-form">
+                    <div class="form-row">
+                        <input type="text" name="Email" id="newsletter-email-input" placeholder="Enter Your Email Here"
+                            class="form-control" required="*">
+                        <button type="submit" class="subcribe" name="submit">Subscribe Now</button>
+                    </div>
+                </form>
+            </div>
+            <div id="NewsLetterFormResponse"></div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------- News Letter End------------------------------------------------------->
+
+    <!------------------------------------------------------------------ updates here---------------------------------------------------------->
+    <!-- Updates Here-->
+    <div class="updates spad">
+        <div class="container">
+            <div class="updates-main">
+                <div class="updates-items" itemscope="" itemtype="http://schema.org/BlogPosting">
+                    <!-- <div class="hide">
+                        <span itemprop="author">Social Parsh</span>
+                        <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+                            <span itemprop="name">#</span>
+                            <div itemprop="logo" itemscope="" itemtype="http://schema.org/ImageObject">
+                                <img src="images/logo.png" alt="" itemprop="url">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="updates-images">
+                        <img src="images/Blogimg.jpg" width="100%" height="100%" alt="blog" itemprop="image">
+                    </div>
+                    <div class="updates-content">
+                        <div class="updates-date-share">
+                            <a href="updatedetails.html" class="title" itemprop="headline">Lorem Ipsum Dolor</a>
+                            <button type="button" class="share-btn" id="update-share" aria-label="share"
+                                data-toggle="modal" data-target="#updatemodal">
+                                Icon
+                            </button>
+                        </div>
+                        <p class="decs" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </p>
+                    </div>
+                </div>
+                <div class="updates-items" itemscope="" itemtype="http://schema.org/BlogPosting">
+                    <!-- <div class="hide">
+                        <span itemprop="author">Social Parsh</span>
+                        <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+                            <span itemprop="name">#</span>
+                            <div itemprop="logo" itemscope="" itemtype="http://schema.org/ImageObject">
+                                <img src="images/logo.png" alt="" itemprop="url">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="updates-images">
+                        <img src="images/Blogimg.jpg" width="100%" height="100%" alt="blog" itemprop="image">
+                    </div>
+                    <div class="updates-content">
+                        <div class="updates-date-share">
+                            <a href="updatedetails.html" class="title" itemprop="headline">Lorem Ipsum Dolor</a>
+                            <button type="button" class="share-btn" id="update-share" aria-label="share"
+                                data-toggle="modal" data-target="#updatemodal">
+                                Icon
+                            </button>
+                        </div>
+                        <p class="decs" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </p>
+                    </div>
+                </div>
+                <div class="updates-items" itemscope="" itemtype="http://schema.org/BlogPosting">
+                    <!-- <div class="hide">
+                        <span itemprop="author">Social Parsh</span>
+                        <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+                            <span itemprop="name">#</span>
+                            <div itemprop="logo" itemscope="" itemtype="http://schema.org/ImageObject">
+                                <img src="images/logo.png" alt="" itemprop="url">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="updates-images">
+                        <img src="images/Blogimg.jpg" width="100%" height="100%" alt="blog" itemprop="image">
+                    </div>
+                    <div class="updates-content">
+                        <div class="updates-date-share">
+                            <a href="updatedetails.html" class="title" itemprop="headline">Lorem Ipsum Dolor</a>
+                            <button type="button" class="share-btn" id="update-share" aria-label="share"
+                                data-toggle="modal" data-target="#updatemodal">
+                                Icon
+                            </button>
+                        </div>
+                        <p class="decs" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="a-btn">
+                <a href="update-page-1.html" class="btn">View All Updates</a>
+            </div>
+        </div>
+    </div>
+
+       <!-- Updateds End-->
+    <hr>
+    <!--Logo Slider sections-->
+		<div class="logo-slider spad">
+			<div class="title">Our Brand Basket </div>
+			<div class="container-fluid">
+				<div class="logo-slider-inner">
+					<div class="logo-slider-items"><img src="images/logo-slider-item.png" width="155px" height="36px" itemprop="image" alt="logo-sldier"></div>
+					<div class="logo-slider-items"><img src="images/logo-slider-item.png" width="155px" height="36px" itemprop="image" alt="logo-sldier"></div>
+					<div class="logo-slider-items"><img src="images/logo-slider-item.png" width="155px" height="36px" itemprop="image" alt="logo-sldier"></div>
+					<div class="logo-slider-items"><img src="images/logo-slider-item.png" width="155px" height="36px" itemprop="image" alt="logo-sldier"></div>
+					<div class="logo-slider-items"><img src="images/logo-slider-item.png" width="155px" height="36px" itemprop="image" alt="logo-sldier"></div>
+					<div class="logo-slider-items"><img src="images/logo-slider-item.png" width="155px" height="36px" itemprop="image" alt="logo-sldier"></div>
+					<div class="logo-slider-items"><img src="images/logo-slider-item.png" width="155px" height="36px" itemprop="image" alt="logo-sldier"></div>
+					<div class="logo-slider-items"><img src="images/logo-slider-item.png" width="155px" height="36px" itemprop="image" alt="logo-sldier"></div>
+					<div class="logo-slider-items"><img src="images/logo-slider-item.png" width="155px" height="36px" itemprop="image" alt="logo-sldier"></div>
+					<div class="logo-slider-items"><img src="images/logo-slider-item.png" width="155px" height="36px" itemprop="image" alt="logo-sldier"></div>
+					<div class="logo-slider-items"><img src="images/logo-slider-item.png" width="155px" height="36px" itemprop="image" alt="logo-sldier"></div>
+				</div>
+				<div class="control">
+	  			</div><!--control-->
+			</div>
+		</div>
+	<!--Logo Slider sections-end-->
+</body>
+
+</html>
