@@ -1,0 +1,572 @@
+body {
+    background-color: rgb(246, 240, 233);
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+}
+
+/******************************************************************navbar css ************************************************************/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::selection {
+    background: rgb(0, 123, 255, 0.3);
+}
+
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+.about .content {
+    margin-top: 100px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+    background-color: #1b1b1b;
+}
+
+.navbar.sticky {
+    padding: 10px 0;
+    background: #1b1b1b;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: red;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .menu-list {
+    display: inline-flex;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+    color: rgb(155, 248, 248);
+}
+
+.about {
+    padding: 40px 0;
+}
+
+.about .title {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.about p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.navbar.sticky .icon.cancel-btn {
+    top: 10px;
+}
+
+@media (max-width: 868px) {
+    body.disabledScroll {
+        overflow: hidden;
+    }
+
+    .icon {
+        display: block;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        z-index: 9;
+    }
+
+    .icon.cancel-btn {
+        display: none;
+    }
+
+    .icon.cancel-btn.show {
+        display: block;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+
+    .navbar .menu-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: #222;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+        transition: all 0.3s ease;
+    }
+
+    .navbar.sticky .menu-list {
+        clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+    }
+
+    .navbar .menu-list.active {
+        clip-path: circle(75%);
+    }
+
+    .navbar .menu-list li {
+        margin-top: 45px;
+    }
+
+    .navbar .menu-list li a {
+        font-size: 23px;
+    }
+}
+/****************************************************************slider css *************************************************************/
+#slide {
+        width: 100%;
+    }
+
+    /* * {
+        box-sizing: border-box
+    } */
+
+    .mySlides {
+        display: none
+    }
+
+    .slideshow-container {
+        width: auto;
+        position: relative;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 29%;
+        width: auto;
+        padding: 16px;
+        color: #eb0000;
+        /* background-color: rgb(241, 242, 226); */
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 10px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text {
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        font-size: 28px;
+    }
+    .text-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: none;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #494B55;
+    }
+
+ /* animation  */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 400px) {
+        .text{
+            font-size: 12px;
+        }
+    }
+    @media only scren and(min-width: 401px)and( max-width: 900px){
+        .text{
+            font-size: 16px
+        }
+    }
+    .pics {
+        border: 1px solid #494B55;
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+    }
+/********************************************************** home about section here ********************************************************/
+.about-us {
+    margin: 90px 0;
+}
+
+.about-us .container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-inside {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.decs {
+    font-size: 18px;
+}
+
+.about-us-content {
+    width: 540px;
+}
+
+.about-us-content h1 {
+    font-size: 46px;
+}
+
+.about-us-img img {
+    border-radius: 15px;
+}
+
+/******************************************************************counter css here  ******************************************************/
+.counter {
+    padding-top: 10px;
+}
+
+.counter h2 {
+    font-size: 36px;
+}
+
+.counter-1 {
+    background-color: black;
+    color: rgb(248, 249, 242);
+    text-align: center;
+    height: 20vh;
+
+}
+
+.counter-inside {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    font-size: 22px;
+}
+
+/**********************************************************************our services********************************************************/
+.our-serivces {
+    margin: 90px 0;
+}
+
+.our-serivces-items {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+
+.our-services-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.serivces-images img {
+    border-radius: 5px;
+}
+
+/******************************************************************** News Letter **********************************************************/
+.newsletter {
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    height: 14vh;
+}
+
+.newsletter-inside h3 {
+    padding-top: 15px;
+    text-align: center;
+    color: rgb(247, 92, 92);
+}
+
+.form-row {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.form-row input {
+    width: 20%;
+    height: 3vh;
+    border-radius: 7px;
+
+}
+
+.form-row input:focus {
+    outline: 2px solid rgb(155, 248, 248);
+}
+
+.form-row button:hover {
+    transition: 0.5s;
+    background-color: rgb(155, 248, 248);
+    cursor: pointer;
+}
+
+.form-row button {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/*************************************************************** updates ******************************************************************/
+.updates-images img {
+    aspect-ratio: 1.1;
+    max-width: 412px;
+    max-height: 373px;
+    object-fit: cover;
+}
+
+.updates {
+    margin-top: 90px;
+}
+
+.updates-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+
+.updates-content p {
+    padding: 0 5px;
+}
+
+.updates-items {
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: rgba(250, 250, 245, 0.912);
+    box-shadow: 0 4px 8px 0 rgb(24 1 1 / 20%), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.updates-date-share {
+    display: flex;
+    margin: 0 5px;
+    justify-content: space-between;
+}
+
+.updates-date-share a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(88, 88, 87);
+}
+
+.btn {
+    font-size: 26px;
+    margin: 60px 0px;
+    text-decoration: none;
+    padding: 10px 35px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+}
+
+.a-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover {
+    transition: 0.5s;
+    background-color: rgb(155, 248, 248);
+    color: black;
+}
+
+/************************************************************* slider*******************************************************************/
+.logo-slider-inner {
+    display: flex;
+}
+.logo-slider{
+    width: 99%;
+}
+.logo-slider .title {
+    margin: 50px 0;
+    font-size: 29px;
+    font-weight: 900;
+    text-align: center;
+}
+/* footer css */
+.main-footer{
+    width: 100%;
+}
+.main-footer .container{
+    padding: 80px 0;
+    background-color: #93B1A6;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.footer-inside{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.footer-ul{
+    display: flex;
+    padding-left: 0;
+    gap: 8px;
+}
+li{
+    list-style: none;
+}
+svg{
+    width: 25px;
+    height: 25px;
+}
+a{
+    text-decoration: none;
+}
+.footer-items{
+    width: 300px;
+}
+.footer-items .title{
+    margin: 0;
+}
+.navbar-nav{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.nav-item{
+    text-align: center;
+    font-size: 18px;
+}
+.nav-link{
+    color: black;
+    font-weight: 400;
+}
+.contact-items{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.contact-decs a{
+    color: black;
+    text-decoration: underline;
+    font-weight: 600;
+}
+/* copy right */
+.copy-right .container{
+    width: 100%;
+    padding: 25px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.copy-right-item a{
+    color: red;
+}
