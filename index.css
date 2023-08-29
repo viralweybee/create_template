@@ -108,8 +108,9 @@ svg {
 
 .icon.cancel-btn {
     position: absolute;
-    right: 30px;
+    right: 35px;
     top: 20px;
+    background-color: white;
 }
 
 .navbar.sticky .icon.cancel-btn {
@@ -171,6 +172,10 @@ svg {
 
     .navbar .menu-list li a {
         font-size: 23px;
+    }
+    .menu-btn{
+        background-color: white;
+        margin-right: 15px;
     }
 }
 /****************************************************************slider css *************************************************************/
