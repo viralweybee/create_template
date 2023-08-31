@@ -1,4 +1,25 @@
-/********************************************************navbar css****************************************************************************/
+body {
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+:root {
+    --primary-color: #040D12;
+    --second-color: #183D3D;
+    --third-color:#5C8374;
+    --fourth-color:#93B1A6;
+    --white: #ffffff;
+    --bgcolor: #f6f9fe;
+    --primary-font: 'Rubik', sans-serif;
+    --second-font: 'Sarabun', sans-serif;
+}
+
+/******************************************************************navbar css ************************************************************/
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -31,12 +52,12 @@
     width: 100%;
     padding: 25px 0;
     transition: all 0.3s ease;
-    background-color: #1b1b1b;
+    background-color: var(--second-color);
 }
 
 .navbar.sticky {
     padding: 10px 0;
-    background: #1b1b1b;
+    background: var(--second-color);
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -47,8 +68,8 @@
 }
 
 .navbar .logo a {
-    color: red;
-    font-size: 30px;
+    color:var(--white);
+    font-size: 35px;
     font-weight: 600;
     text-decoration: none;
 }
@@ -71,7 +92,7 @@
 }
 
 .menu-list li a:hover {
-    color: rgb(155, 248, 248);
+    color: var(--fourth-color);
 }
 
 .about {
@@ -97,8 +118,9 @@
 
 .icon.cancel-btn {
     position: absolute;
-    right: 30px;
+    right: 35px;
     top: 20px;
+    background-color: white;
 }
 
 .navbar.sticky .icon.cancel-btn {
@@ -161,4 +183,286 @@
     .navbar .menu-list li a {
         font-size: 23px;
     }
+    .menu-btn{
+        background-color: white;
+        margin-right: 15px;
+    }
+}
+/* About us--------------------------------------------------------------- */
+.ab{
+    width: 100%;
+    height: 100px;
+    background-color: var(--fourth-color);
+    font-size: 35px;
+    text-align: center;
+    padding-top: 40px;
+}
+/* Home about section -------------------------------------------------- */
+.about-us {
+    margin: 90px 0;
+}
+
+.about-us .container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-inside {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.decs {
+    font-size: 18px;
+}
+
+.about-us-content {
+    padding-top: 0;
+    width: 540px;
+}
+
+.title p  {
+    margin-top: 0;
+    font-size: 46px;
+}
+
+.about-us-img img {
+    border-radius: 15px;
+}
+/* our mission section -------------------------------------------------------*/
+
+.vision-mission-items{
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+.about-vm-image{
+    width: 400px;
+}
+.about-vm-content{
+    width: 700px;
+    padding: 50px;
+}
+.about-vm-content h2{
+    text-align: center;
+}
+
+/* slider-1 css */
+body {
+    font-family: tahoma;
+    background-image: url(https://s3.ca-central-1.amazonaws.com/image-web-frankie/BackgroundBlue.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .testimonial {
+    background-color: white;
+    text-align: center;
+    padding: 30px 30px 50px;
+    margin: 100px 15px 160px;
+    position: relative;
+  }
+  
+  .testimonial::before,
+  .testimonial::after {
+    content: "";
+    border-top: 40px solid white;
+    border-right: 125px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+  }
+  
+  .testimonial::after {
+    border-right: none;
+    border-left: 125px solid transparent;
+    left: auto;
+    right: 0;
+  }
+  
+  .testimonial .icon {
+    display: inline-block;
+    font-size: 80px;
+    color: #016d9b;
+    margin-bottom: 20px;
+    opacity: 0.6;
+  }
+  
+  .testimonial .description {
+    font-size: 14px;
+    color: #777;
+    text-align: justify;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .testimonial .testimonial-content {
+    width: 100%;
+    left: 0;
+    position: absolute;
+  }
+  
+  .testimonial .pic {
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 4px #016d9b;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .testimonial .pic img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .testimonial .name {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    margin: 10px 0 5px 0;
+  }
+  
+  .testimonial .title {
+    display: block;
+    font-size: 14px;
+    color: #ffd9b8;
+  }
+  
+  .owl-controls {
+    margin-top: 20px;
+  }
+  
+  .owl-pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .owl-page {
+    height: 10px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10%;
+  }
+  
+  .owl-page:hover,
+  .owl-page.active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .owl-page:not(first-item) {
+    margin-left: 10px;
+  }
+  
+/* footer css */
+.page-footer{
+    margin-top: 80px;
+}
+.mt-4{
+    background-color: var(--primary-color);
+}
+.row-1{
+    background-color: var(--fourth-color);
+}
+.row{
+    /* background-color: var(--fourth-color); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.col-lg-3{
+    width: 285px;
+    height: 275px;
+}
+.col-lg-3 ul{
+    /* margin-left: 0; */
+    padding-left: 0;
+}
+.col-lg-3 li {
+    list-style: none;
+    padding-top: 5px;
+}
+.col-lg-3 a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.col-lg-3 h5{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.col-lg-3 p{
+    text-decoration: underline;
+}
+.col-lg-3 img{
+    padding: 39px;
+}
+.form-control{
+    width: 300px;
+    height: 20px;
+}
+.btn2{
+    margin: 10px 0;
+    font-size: 16px;
+   width: fit-content;
+   background-color:var(--primary-color);
+   color:var(--white);
+   border-radius: 15px;
+   padding: 7px 25px;
+}   
+.btn2:hover{
+    cursor: pointer;
+   background-color: var(--fourth-color);
+   color: var(--primary-color);
+    
+}
+.phone{
+    display: flex;
+    gap: 2px;
+}
+.email{
+    display: flex;
+    gap: 2px;
+}
+.phone span{
+   padding-top: 14px;
+    
+}
+.phone span:hover{
+    fill: var(--white);
+    cursor: pointer;
+}
+.email span:hover{
+    fill: var(--white);
+    cursor: pointer;
+}
+.email span{
+    padding-top: 14px;
+}
+/* copy right */
+.sosmed-button a{
+    text-decoration: none;
+    padding-left: 10px;
+    fill: var(--fourth-color);
+}
+.sosmed-button a:hover{
+    fill: var(--white);
+}
+.text-right{
+    padding-top: 15px;
+}
+.sosmed-button{
+    /* border: 1px solid black; */
+  width: 200px;
+}
+.mt-4 p{
+    color: var(--white);
+}
+.mt-4 span{
+   color: red;
 }
