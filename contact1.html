@@ -54,9 +54,9 @@
                         </g>
                     </svg>
                 </div>
-                <li><a href="index1.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="products1.html">Products</a></li>
                 <li><a href="update1.html">Updates</a></li>
                 <li><a href="gallery1.html">Gallery</a></li>
                 <li><a href="contact1.html">Contact Us </a></li>
@@ -328,6 +328,29 @@
             </div>
         </div>
     </footer>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+            body.classList.add("disabledScroll");
+        }
+        cancelBtn.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            body.classList.remove("disabledScroll");
+        }
+
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
 </body>
 
 </html>

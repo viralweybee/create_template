@@ -160,7 +160,7 @@ svg {
         left: 0;
         height: 100vh;
         width: 100%;
-        background: #222;
+        background: var(--second-color);;
         display: block;
         padding: 40px 0;
         text-align: center;
@@ -169,7 +169,7 @@ svg {
     }
 
     .navbar.sticky .menu-list {
-        clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+        clip-path: circle(25px at calc(100% - 55px) calc(0% + 25px));
     }
 
     .navbar .menu-list.active {
