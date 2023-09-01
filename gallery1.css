@@ -188,73 +188,89 @@ svg {
         margin-right: 15px;
     }
 }
-/* About us--------------------------------------------------------------- */
-.ab{
+/* banner section------------------------------------------------------------------------------------------------------------------------------*/
+.banner-area{
     width: 100%;
-    height: 100px;
+    height: 120px;
+    text-align: center;
+    padding-top: 30px;
     background-color: var(--fourth-color);
-    font-size: 35px;
-    text-align: center;
-    padding-top: 40px;
+    color: var(--white);
+    font-size: 25px;
 }
-/* Home about section -------------------------------------------------- */
-.about-us {
-    margin: 90px 0;
-}
-
-.about-us .container {
-    display: flex;
-    justify-content: center;
+/* gallery------------------------------------------------------------------------------------------------------------------------------------*/
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.about-us-inside {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
 }
 
-.decs {
-    font-size: 18px;
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
 }
 
-.about-us-content {
-    padding-top: 0;
-    width: 540px;
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.title p  {
-    margin-top: 0;
-    font-size: 46px;
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
 }
 
-.about-us-img img {
-    border-radius: 15px;
-}
-/* our mission section -------------------------------------------------------*/
-
-.vision-mission-items{
-    margin-left: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2px;
-}
-.about-vm-image{
-    width: 400px;
-}
-.about-vm-content{
-    width: 700px;
-    padding: 50px;
-}
-.about-vm-content h2{
-    text-align: center;
+.img-box:hover img { 
+  transform: scale(1.1);
 }
 
-/* slider-1 css */
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
 
-/* footer css */
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+/* ********************************************************footer css**************************************************************/
 .page-footer{
     margin-top: 80px;
+    /* background-color: var(--fourth-color); */
 }
 .mt-4{
     background-color: var(--primary-color);
