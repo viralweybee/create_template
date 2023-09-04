@@ -167,19 +167,19 @@
     
         <div class="testimonials">
             <label class="item" for="t-1">
-                <img src="images/profile1.jpg" width="280px" height="327px">
+                <img src="images/profile1.jpg" width="280px" height="327px" alt="proflie1-img">
             </label>
             <label class="item" for="t-2">
-                <img src="images/profile2.jpg"  width="280px" height="327px" alt="">
+                <img src="images/profile2.jpg"  width="280px" height="327px" alt="proflie2-img">
             </label>
             <label class="item" for="t-3">
-                <img src="images/profile3.jpg"  width="280px" height="327px" alt="">
+                <img src="images/profile3.jpg"  width="280px" height="327px" alt="proflie3-img">
             </label>
             <label class="item" for="t-4">
-                <img src="images/profile4.jpg"  width="280px" height="327px" alt="">
+                <img src="images/profile4.jpg"  width="280px" height="327px" alt="proflie4-img">
             </label>
             <label class="item" for="t-5">
-                <img src="images/profile5.jpg"  width="280px" height="327px" alt="">
+                <img src="images/profile5.jpg"  width="280px" height="327px" alt="proflie5-img">
             </label>
     
         </div>
@@ -413,7 +413,7 @@ let displayTestimonial = () => {
     <p>${testimonials[i].testimonial}</p>
     <img src=${testimonials[i].image}>
     <h3>${testimonials[i].name}</h3>
-    <h6>${testimonials[i].job}</h6>
+    <h4>${testimonials[i].job}</h4>
   `;
 };
 window.onload = displayTestimonial;

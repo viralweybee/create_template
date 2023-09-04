@@ -446,7 +446,7 @@ h1{
 }
 
 .wrapper {
-    background-color: #ffffff;
+    background-color:var(--white);
     position: absolute;
     width: 80vw;
     max-width: 41em;
@@ -458,7 +458,7 @@ h1{
     box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
     display: flex;
   }
-  .testimonial-container {
+  .testimonial-container {  
     width: 85%;
     height: 100%;
     position: relative;
@@ -475,7 +475,7 @@ h1{
     font-size: 1.8em;
     height: 2.2em;
     width: 2.2em;
-    background-color: #ffffff;
+    background-color: var(--white);
     position: absolute;
     margin: auto;
     top: 0;
@@ -493,7 +493,7 @@ h1{
     left: -1.1em;
   }
   .testimonial-container p {
-    color: #8c8c90;
+    color: var(--primary-color);
     text-align: center;
     font-size: 0.9em;
     line-height: 2em;
@@ -512,9 +512,9 @@ h1{
     font-size: 1em;
     text-align: center;
   }
-  .testimonial-container h6 {
+  .testimonial-container h4 {
     color: #bcc4da;
-    font-size: 0.9em;
+    font-size: 0.8em;
     letter-spacing: 0.03em;
     font-weight: 400;
     text-align: center;
