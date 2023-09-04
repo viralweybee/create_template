@@ -220,6 +220,24 @@ svg {
     padding: 10px;
     font-size: 16px;
 }
+@media (max-width: 700px){
+  .contact-custom-item img{
+    width: 400px;
+    height: 350px;
+  }
+  .contact-custom-item{
+    width: 400px;
+}
+}
+@media (max-width: 450px){
+  .contact-custom-item img{
+    width: 300px;
+    height: 250px;
+  }
+  .contact-custom-item{
+    width: 300px;
+  }
+}
 /* contact section ------------------------------------------------------------------------------------------------------------- */
 .contact_us_6 * {
   font-family: Nunito, sans-serif;

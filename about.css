@@ -231,6 +231,15 @@ svg {
 .about-us-img img {
     border-radius: 15px;
 }
+@media (max-width:550px){
+    .about-us-img img{
+      width: 300px;
+      height: 250px;
+    }
+    .about-us-content{
+      width: 300px;
+    }
+  }
 /* our mission section -------------------------------------------------------*/
 .vision-mission .container{
     display: flex;
@@ -252,6 +261,31 @@ svg {
 }
 .about-vm-content h2{
     text-align: center;
+}
+@media (max-width:1260px){
+    .vision-mission-items{
+        margin: 0;
+        justify-content: center;
+    }
+}
+@media (max-width:750px){
+    .about-vm-content{
+        width: 450px;
+        padding: 30px;
+    }
+}
+@media (max-width:530px){
+    .about-vm-content{
+        width: 300px;
+        padding: 20px;
+    }
+    .about-vm-image{
+        width: 300px;
+    }
+    .about-vm-image img{
+        width: 300px;
+        height: 250px;
+    }
 }
 
 /* slider-1 css -----------------------------------------------------------------------------------------------------------------------*/
@@ -430,6 +464,12 @@ h1{
     position: relative;
     margin: auto;
     padding: 1.8em 1.2em;
+  }
+  @media (max-width:500px){
+    .testimonial-container{
+        padding: 0;
+        width: 90%;
+    }
   }
   .wrapper button {
     font-size: 1.8em;

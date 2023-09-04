@@ -3,16 +3,16 @@ body {
     margin: 0;
     padding: 0;
 }
-
 svg {
     width: 20px;
     height: 20px;
 }
+
 :root {
     --primary-color: #040D12;
     --second-color: #183D3D;
-    --third-color:#5C8374;
-    --fourth-color:#93B1A6;
+    --third-color: #5C8374;
+    --fourth-color: #93B1A6;
     --white: #ffffff;
     --bgcolor: #f6f9fe;
     --primary-font: 'Rubik', sans-serif;
@@ -68,7 +68,7 @@ svg {
 }
 
 .navbar .logo a {
-    color:var(--white);
+    color: var(--white);
     font-size: 35px;
     font-weight: 600;
     text-decoration: none;
@@ -160,7 +160,7 @@ svg {
         left: 0;
         height: 100vh;
         width: 100%;
-        background:var(--second-color);
+        background: var(--second-color);
         display: block;
         padding: 40px 0;
         text-align: center;
@@ -183,129 +183,141 @@ svg {
     .navbar .menu-list li a {
         font-size: 23px;
     }
-    .menu-btn{
+
+    .menu-btn {
         background-color: white;
         margin-right: 15px;
     }
 }
+
 /****************************************************************slider css *************************************************************/
+.slider1{
+    width: 100%;
+}
 #slide {
-        width: 100%;
-    }
-    .mySlides {
-        display: none
+    width: 100%;
+}
+
+.mySlides {
+    display: none
+}
+
+.slideshow-container {
+    /* width: auto; */
+    position: relative;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 39%;
+    /* width: auto; */
+    padding: 16px;
+    color: var(--white);
+    background-color: var(--fourth-color);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 4px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    border-radius: 30px;
+    background-color: var(--white);
+    opacity: 0.6;
+    position: absolute;
+    text-align: center;
+    bottom: 28%;
+    left: 2%;
+    font-size: 28px;
+}
+
+.text span {
+    font-size: 40px;
+}
+
+.text-container {
+    display: flex;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: none;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #494B55;
+}
+
+/* animation  */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
     }
 
-    .slideshow-container {
-        width: auto;
-        position: relative;
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
     }
 
-    /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 39%;
-        width: auto;
-        padding: 16px;
-        color: var(--white);
-        background-color: var(--fourth-color);
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
+    to {
+        opacity: 1
     }
+}
 
-    /* Position the "next button" to the right */
-    .next {
-        right: 4px;
-        border-radius: 3px 0 0 3px;
-    }
+/* On smaller screens, decrease text size */
 
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .text {
-        border-radius: 30px ;
-        background-color: var(--white);
-        opacity: 0.6;
-        position: absolute;
-        text-align: center;
-        bottom: 28%;
-        left: 2%;
-        font-size: 28px;
-    }
-    .text span{
-        font-size: 40px;
-    }
+@media only screen and (max-width: 500px) {
     .text-container{
-        display: flex;
-    }
-
-    .dot {
-        cursor: pointer;
-        height: 13px;
-        width: 13px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
         display: none;
-        transition: background-color 0.6s ease;
     }
+}
 
-    .active,
-    .dot:hover {
-        background-color: #494B55;
+@media only scren and(min-width: 401px)and(max-width: 900px) {
+    .text {
+        font-size: 16px
     }
+}
 
- /* animation  */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 2s;
-        animation-name: fade;
-        animation-duration: 2s;
-    }
+.pics {
+    border: 1px solid #494B55;
+   width: 99.90%;
+    height: 75vh;
+    object-fit: cover;
+}
 
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 400px) {
-        .text{
-            font-size: 12px;
-        }
-    }
-    @media only scren and(min-width: 401px)and( max-width: 900px){
-        .text{
-            font-size: 16px
-        }
-    }
-    .pics {
-        border: 1px solid #494B55;
-        width: 100%;
-        height: 75vh;
-        object-fit: cover;
-    }
 /********************************************************** home about section here ********************************************************/
 .about-us {
     margin: 90px 0;
@@ -332,7 +344,7 @@ svg {
     width: 540px;
 }
 
-.title p  {
+.title p {
     margin-top: 0;
     font-size: 46px;
 }
@@ -340,7 +352,16 @@ svg {
 .about-us-img img {
     border-radius: 15px;
 }
-
+/* Responsive  */
+@media (max-width:550px){
+    .about-us-img img{
+      width: 300px;
+      height: 250px;
+    }
+    .about-us-content{
+      width: 300px;
+    }
+  }
 /******************************************************************counter css here  ******************************************************/
 .counter {
     padding-top: 10px;
@@ -357,11 +378,13 @@ svg {
     height: 200px;
     width: 100%;
 }
-@media (max-width:520px){
-    .counter-1{
+
+@media (max-width:520px) {
+    .counter-1 {
         height: 400px;
     }
 }
+
 .counter-inside {
     display: flex;
     flex-wrap: wrap;
@@ -373,11 +396,12 @@ svg {
 /**********************************************************************our services********************************************************/
 
 
-.Our-services{     
+.Our-services {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px; 
+    margin-bottom: 100px;
 }
+
 .Our-services-container {
     width: 1100px;
     display: flex;
@@ -444,6 +468,7 @@ h1 {
     margin: 40px 0 20px 0;
     text-align: center;
 }
+
 /******************************************************************** News Letter **********************************************************/
 .newsletter {
     font-size: 25px;
@@ -485,17 +510,20 @@ h1 {
     padding: 8px;
     border-radius: 10px;
 }
-@media (max-width:730px){
+
+@media (max-width:730px) {
     .form-row input {
         width: 40%;
         height: 3vh;
         border-radius: 7px;
     }
+
     .form-row button {
         font-size: 12px;
         padding: 3px;
         border-radius: 8px;
     }
+
     .newsletter {
         font-size: 25px;
         background-color: var(--second-color);
@@ -570,152 +598,185 @@ h1 {
 
 /************************************************************* slider*******************************************************************/
 .slider-area h2 {
-	text-align: center;
-	font-size: 40px;
-	font-weight: 520;
-	letter-spacing: 2px;
-	margin: 50px 0 50px 0;
-	color: var(--primary-color);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 520;
+    letter-spacing: 2px;
+    margin: 50px 0 50px 0;
+    color: var(--primary-color);
 }
+
 .wrapper {
-	display: flex;
-	width: 800px;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 2rem;
-	background: #faf6ed;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2rem;
+    background: #faf6ed;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .item {
-	animation: animate 15s alternate linear infinite;
+    animation: animate 15s alternate linear infinite;
 
 }
+
 .wrapper:hover .item {
-	animation-play-state: paused;
+    animation-play-state: paused;
 }
+
 @keyframes animate {
-	0% {
-		transform: translate3d(0, 0, 0);
-	}
-	100% {
-		transform: translate3d(-800px, 0, 0);
-	}
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-800px, 0, 0);
+    }
 }
+
 @media (max-width:767px) {
-	.slider-area h2 {
-		font-size: 30px;
-	}
-	.wrapper {
-		width: 95%;
-		border-radius: 0;
-		padding: 0;
-	}
+    .slider-area h2 {
+        font-size: 30px;
+    }
+
+    .wrapper {
+        width: 95%;
+        border-radius: 0;
+        padding: 0;
+    }
 }
+
 /* ********************************************************footer css**************************************************************/
-.page-footer{
+.page-footer {
     margin-top: 80px;
     /* background-color: var(--fourth-color); */
 }
-.mt-4{
+
+.mt-4 {
     background-color: var(--primary-color);
 }
-.row-1{
+
+.row-1 {
     background-color: var(--fourth-color);
 }
-.row{
+
+.row {
     /* background-color: var(--fourth-color); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.col-lg-3{
+
+.col-lg-3 {
     width: 285px;
     height: 275px;
 }
-.col-lg-3 ul{
+
+.col-lg-3 ul {
     /* margin-left: 0; */
     padding-left: 0;
 }
+
 .col-lg-3 li {
     list-style: none;
     padding-top: 5px;
 }
-.col-lg-3 a{
+
+.col-lg-3 a {
     font-size: 18px;
     text-decoration: none;
     color: black;
 }
-.col-lg-3 h5{
+
+.col-lg-3 h5 {
     font-size: 26px;
     margin-bottom: 20px;
 }
-.col-lg-3 p{
+
+.col-lg-3 p {
     text-decoration: underline;
 }
-.col-lg-3 img{
+
+.col-lg-3 img {
     padding: 39px;
 }
-.form-control{
+
+.form-control {
     width: 300px;
     height: 20px;
 }
-.btn2{
+
+.btn2 {
     margin: 10px 0;
     font-size: 16px;
-   width: fit-content;
-   background-color:var(--primary-color);
-   color:var(--white);
-   border-radius: 15px;
-   padding: 7px 25px;
-}   
-.btn2:hover{
-    cursor: pointer;
-   background-color: var(--fourth-color);
-   color: var(--primary-color);
-    
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 15px;
+    padding: 7px 25px;
 }
-.phone{
+
+.btn2:hover {
+    cursor: pointer;
+    background-color: var(--fourth-color);
+    color: var(--primary-color);
+
+}
+
+.phone {
     display: flex;
     gap: 2px;
 }
-.email{
+
+.email {
     display: flex;
     gap: 2px;
 }
-.phone span{
-   padding-top: 14px;
-    
+
+.phone span {
+    padding-top: 14px;
+
 }
-.phone span:hover{
+
+.phone span:hover {
     fill: var(--white);
     cursor: pointer;
 }
-.email span:hover{
+
+.email span:hover {
     fill: var(--white);
     cursor: pointer;
 }
-.email span{
+
+.email span {
     padding-top: 14px;
 }
+
 /* copy right */
-.sosmed-button a{
+.sosmed-button a {
     text-decoration: none;
     padding-left: 10px;
     fill: var(--fourth-color);
 }
-.sosmed-button a:hover{
+
+.sosmed-button a:hover {
     fill: var(--white);
 }
-.text-right{
+
+.text-right {
     padding-top: 15px;
 }
-.sosmed-button{
+
+.sosmed-button {
     /* border: 1px solid black; */
-  width: 200px;
+    width: 200px;
 }
-.mt-4 p{
+
+.mt-4 p {
     color: var(--white);
 }
-.mt-4 span{
-   color: red;
+
+.mt-4 span {
+    color: red;
 }
