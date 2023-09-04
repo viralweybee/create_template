@@ -164,26 +164,26 @@
         <input type="radio" name="testimonial" id="t-3" checked>
         <input type="radio" name="testimonial" id="t-4">
         <input type="radio" name="testimonial" id="t-5">
-    
+
         <div class="testimonials">
             <label class="item" for="t-1">
                 <img src="images/profile1.jpg" width="280px" height="327px" alt="proflie1-img">
             </label>
             <label class="item" for="t-2">
-                <img src="images/profile2.jpg"  width="280px" height="327px" alt="proflie2-img">
+                <img src="images/profile2.jpg" width="280px" height="327px" alt="proflie2-img">
             </label>
             <label class="item" for="t-3">
-                <img src="images/profile3.jpg"  width="280px" height="327px" alt="proflie3-img">
+                <img src="images/profile3.jpg" width="280px" height="327px" alt="proflie3-img">
             </label>
             <label class="item" for="t-4">
-                <img src="images/profile4.jpg"  width="280px" height="327px" alt="proflie4-img">
+                <img src="images/profile4.jpg" width="280px" height="327px" alt="proflie4-img">
             </label>
             <label class="item" for="t-5">
-                <img src="images/profile5.jpg"  width="280px" height="327px" alt="proflie5-img">
+                <img src="images/profile5.jpg" width="280px" height="327px" alt="proflie5-img">
             </label>
-    
+
         </div>
-        <br/>
+        <br />
         <div class="dots">
             <label for="t-1"></label>
             <label for="t-2"></label>
@@ -196,11 +196,11 @@
     <!-- slider section 2 start-->
     <div class="slider-2">
         <h1>Our Testimonial</h1>
-    <div class="wrapper">
-        <div class="testimonial-container" id="testimonial-container"></div>
-        <button id="prev">&lt;</button>
-        <button id="next">&gt;</button>
-      </div>
+        <div class="wrapper">
+            <div class="testimonial-container" id="testimonial-container"></div>
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+        </div>
     </div>
     <!-- slider section 2 end -->
     <!-- footer -->
@@ -359,64 +359,64 @@
         }
         // slider 2 section 
         //Testimonial Data
-const testimonials = [
-  {
-    name: "Eva Sawyer",
-    job: "CEO, Fashworks",
-    image: "images/profile2.jpg",
-    testimonial:
-      "Neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur",
-  },
-  {
-    name: "Katey Topaz",
-    job: "Developer, TechCrew",
-    image: "images/profile6.jpg",
-    testimonial:
-      "Elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla",
-  },
-  {
-    name: "Jae Robin",
-    job: "UI Designer, Affinity Agency",
-    image: "images/profile1.jpg",
-    testimonial:
-      "Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis",
-  },
-  {
-    name: "Nicola Blakely",
-    job: "CEO,Zeal Wheels",
-    image: "images/profile8.jpg",
-    testimonial:
-      "Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
-  },
-];
+        const testimonials = [
+            {
+                name: "Eva Sawyer",
+                job: "CEO, Fashworks",
+                image: "images/profile2.jpg",
+                testimonial:
+                    "Neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur",
+            },
+            {
+                name: "Katey Topaz",
+                job: "Developer, TechCrew",
+                image: "images/profile6.jpg",
+                testimonial:
+                    "Elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla",
+            },
+            {
+                name: "Jae Robin",
+                job: "UI Designer, Affinity Agency",
+                image: "images/profile1.jpg",
+                testimonial:
+                    "Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis",
+            },
+            {
+                name: "Nicola Blakely",
+                job: "CEO,Zeal Wheels",
+                image: "images/profile8.jpg",
+                testimonial:
+                    "Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+            },
+        ];
 
-//Current Slide
-let i = 0;
-//Total Slides
-let j = testimonials.length;
+        //Current Slide
+        let i = 0;
+        //Total Slides
+        let j = testimonials.length;
 
-let testimonialContainer = document.getElementById("testimonial-container");
-let nextBtn = document.getElementById("next");
-let prevBtn = document.getElementById("prev");
+        let testimonialContainer = document.getElementById("testimonial-container");
+        let nextBtn = document.getElementById("next");
+        let prevBtn = document.getElementById("prev");
 
-nextBtn.addEventListener("click", () => {
-  i = (j + i + 1) % j;
-  displayTestimonial();
-});
-prevBtn.addEventListener("click", () => {
-  i = (j + i - 1) % j;
-  displayTestimonial();
-});
+        nextBtn.addEventListener("click", () => {
+            i = (j + i + 1) % j;
+            displayTestimonial();
+        });
+        prevBtn.addEventListener("click", () => {
+            i = (j + i - 1) % j;
+            displayTestimonial();
+        });
 
-let displayTestimonial = () => {
-  testimonialContainer.innerHTML = `
+        let displayTestimonial = () => {
+            testimonialContainer.innerHTML = `
     <p>${testimonials[i].testimonial}</p>
     <img src=${testimonials[i].image}>
     <h3>${testimonials[i].name}</h3>
     <h4>${testimonials[i].job}</h4>
   `;
-};
-window.onload = displayTestimonial;
+        };
+        window.onload = displayTestimonial;
     </script>
 </body>
 

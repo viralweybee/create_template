@@ -2,6 +2,7 @@ body {
     background-color: var(--white);
     margin: 0;
     padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 svg {
@@ -367,7 +368,7 @@ svg {
 }
 .sosmed-button{
     /* border: 1px solid black; */
-  width: 200px;
+    width: 230px;
 }
 .mt-4 p{
     color: var(--white);
