@@ -5,18 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
-        body{
-            font-family: 'Nunito Sans', sans-serif;;
+        .our-services .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .our-services-item-title h2{
+            text-align: center;
+        }
+        .our-services-item{
+            width: 360px;
+            height: 365px;
+        }
+        .our-services-item-img img{
+            object-fit: cover;
+        }
+        .our-services-item{
+            position: relative;
+        }
+        .our-services-item p{
+            position: absolute;
+            top: 47px;
+            opacity: 0;
+            display: none;
+            transition: 0.8;
+        }
+        .our-services-item:hover .hello{
+            display: block;
+            opacity: 0.85;
+            height: 100%;
+            overflow-y: scroll;
+            background-color: rgba(255, 250, 250, 0.6)
+        }
+        .our-services-item:hover .our-services-item-img{
+            opacity: 0.5;
         }
     </style>
 </head>
 
 <body>
-    <h1>hello</h1>
-    <p>My name is viral devmurari i am living in keshod</p>
+    <div class="our-services">
+        <div class="container">
+            <div class="our-services-item">
+                <div class="our-services-item-title">
+                    <h2>Our Services</h2>
+                </div>
+                <div class="our-services-item-img">
+                    <img src="images/serivces.jpg" loading="lazy" alt="Social-Parsh" width="360px" height="300px"
+                        itemprop="image">
+                </div>
+                <p class="hello">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat modi sit sunt, iusto recusandae voluptates! Esse ipsum alias maxime saepe vero quae adipisci, blanditiis provident, non mollitia quasi veritatis temporibus obcaecati veniam placeat corporis doloremque suscipit sed nesciunt quibusdam repudiandae et illo. Laboriosam nostrum aliquam cumque, quis odit voluptate incidunt itaque suscipit ipsum nesciunt officia iste animi inventore harum praesentium, blanditiis earum illum temporibus delectus velit. Exercitationem quam optio dignissimos necessitatibus consequatur asperiores omnis incidunt rerum dolore, fugit dicta nisi, architecto vero iste? Hic voluptatibus aperiam illum. Obcaecati ratione ea, incidunt minus, odit vitae, sapiente corporis illo esse a maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus fugit alias ad. Accusamus omnis, rerum tempora recusandae officia nostrum consequatur veritatis eligendi suscipit itaque, earum veniam in eos aliquam dolor voluptates enim fuga dolorem! Provident pariatur accusantium est suscipit quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aut quisquam saepe nemo repellat suscipit qui mollitia quod itaque in pariatur quidem rerum quos perspiciatis ullam unde obcaecati veritatis ab, error, alias eos. Nostrum nobis, assumenda quo voluptas doloribus officiis quod! Perferendis delectus dolores dignissimos possimus quasi quod alias aliquam fugiat, hic dolore enim consectetur impedit facilis adipisci dolorum ullam, facere optio aperiam omnis magni? Minima a doloremque voluptate aspernatur nobis omnis odio dignissimos, laboriosam ea voluptatum tempora quaerat reiciendis est qui, id perferendis eius! Facilis odio sint voluptatum delectus, explicabo nesciunt blanditiis quaerat, omnis quisquam libero repudiandae a qui.</p>
+            </div>
+            <div class="our-services-item">
+                <div class="our-services-item-title">
+                    <h2>Our Services</h2>
+                </div>
+                <div class="our-services-item-img">
+                    <img src="images/serivces.jpg" loading="lazy" alt="Social-Parsh" width="360px" height="300px"
+                        itemprop="image">
+                </div>
+                <p class="hello">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat modi sit sunt, iusto recusandae voluptates! Esse ipsum alias maxime saepe vero quae adipisci, blanditiis provident, non mollitia quasi veritatis temporibus obcaecati veniam placeat corporis doloremque suscipit sed nesciunt quibusdam repudiandae et illo. Laboriosam nostrum aliquam cumque, quis odit voluptate incidunt itaque suscipit ipsum nesciunt officia iste animi inventore harum praesentium, blanditiis earum illum temporibus delectus velit. Exercitationem quam optio dignissimos necessitatibus consequatur asperiores omnis incidunt rerum dolore, fugit dicta nisi, architecto vero iste? Hic voluptatibus aperiam illum. Obcaecati ratione ea, incidunt minus, odit vitae, sapiente corporis illo esse a maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus fugit alias ad. Accusamus omnis, rerum tempora recusandae officia nostrum consequatur veritatis eligendi suscipit itaque, earum veniam in eos aliquam dolor voluptates enim fuga dolorem! Provident pariatur accusantium est suscipit quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aut quisquam saepe nemo repellat suscipit qui mollitia quod itaque in pariatur quidem rerum quos perspiciatis ullam unde obcaecati veritatis ab, error, alias eos. Nostrum nobis, assumenda quo voluptas doloribus officiis quod! Perferendis delectus dolores dignissimos possimus quasi quod alias aliquam fugiat, hic dolore enim consectetur impedit facilis adipisci dolorum ullam, facere optio aperiam omnis magni? Minima a doloremque voluptate aspernatur nobis omnis odio dignissimos, laboriosam ea voluptatum tempora quaerat reiciendis est qui, id perferendis eius! Facilis odio sint voluptatum delectus, explicabo nesciunt blanditiis quaerat, omnis quisquam libero repudiandae a qui.</p>
+            </div>
+            <div class="our-services-item">
+                <div class="our-services-item-title">
+                    <h2>Our Services</h2>
+                </div>
+                <div class="our-services-item-img">
+                    <img src="images/serivces.jpg" loading="lazy" alt="Social-Parsh" width="360px" height="300px"
+                        itemprop="image">
+                </div>
+                <p class="hello">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat modi sit sunt, iusto recusandae voluptates! Esse ipsum alias maxime saepe vero quae adipisci, blanditiis provident, non mollitia quasi veritatis temporibus obcaecati veniam placeat corporis doloremque suscipit sed nesciunt quibusdam repudiandae et illo. Laboriosam nostrum aliquam cumque, quis odit voluptate incidunt itaque suscipit ipsum nesciunt officia iste animi inventore harum praesentium, blanditiis earum illum temporibus delectus velit. Exercitationem quam optio dignissimos necessitatibus consequatur asperiores omnis incidunt rerum dolore, fugit dicta nisi, architecto vero iste? Hic voluptatibus aperiam illum. Obcaecati ratione ea, incidunt minus, odit vitae, sapiente corporis illo esse a maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus fugit alias ad. Accusamus omnis, rerum tempora recusandae officia nostrum consequatur veritatis eligendi suscipit itaque, earum veniam in eos aliquam dolor voluptates enim fuga dolorem! Provident pariatur accusantium est suscipit quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aut quisquam saepe nemo repellat suscipit qui mollitia quod itaque in pariatur quidem rerum quos perspiciatis ullam unde obcaecati veritatis ab, error, alias eos. Nostrum nobis, assumenda quo voluptas doloribus officiis quod! Perferendis delectus dolores dignissimos possimus quasi quod alias aliquam fugiat, hic dolore enim consectetur impedit facilis adipisci dolorum ullam, facere optio aperiam omnis magni? Minima a doloremque voluptate aspernatur nobis omnis odio dignissimos, laboriosam ea voluptatum tempora quaerat reiciendis est qui, id perferendis eius! Facilis odio sint voluptatum delectus, explicabo nesciunt blanditiis quaerat, omnis quisquam libero repudiandae a qui.</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
