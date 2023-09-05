@@ -1,19 +1,145 @@
-
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title> Google Translate </title>
+    <title>Harvest vase</title>
+    <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi"
+        rel="stylesheet">
+    <style>
+        .wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        }
+
+        .product-img img {
+            object-fit: cover;
+        }
+
+        .product-info {
+            width: 327px;
+            height: 420px;
+        }
+
+        .product-text {
+            text-align: center;
+        }
+
+        .product-price-btn {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .product-text h2 {
+            color: grey;
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-text h1 {
+            margin-bottom: 0;
+        }
+
+        .product-text p {
+            margin-top: 50px;
+        }
+
+        .product-price-btn {
+            height: 60px;
+            width: 327px;
+            margin-top: 17px;
+        }
+
+        .product-price-btn p {
+            top: -13px;
+            height: 50px;
+            font-family: 'Trocchi', serif;
+            margin: 0 0 0 38px;
+            font-size: 28px;
+            font-weight: lighter;
+            color: #474747;
+        }
+
+        span {
+            display: inline-block;
+            height: 50px;
+            font-family: 'Suranna', serif;
+            font-size: 34px;
+        }
+
+        .product-price-btn button {
+            height: 50px;
+            width: 176px;
+            margin: 10px 40px 0 16px;
+            box-sizing: border-box;
+            border: transparent;
+            border-radius: 60px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #ffffff;
+            background-color: #9cebd5;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .product-price-btn button:hover {
+            background-color: #79b0a1;
+        }
+    </style>
 </head>
+
 <body>
-
-<h1>Your Website Heading</h1>
-
-<div id="google_translate_element"></div>
-
-
-<script type="text/javascript" 
- src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-</script>
+    <div class="parent">
+        <div class="wrapper">
+            <div class="container">
+                <div class="product-img">
+                    <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+                </div>
+                <div class="product-info">
+                    <div class="product-text">
+                        <h1>Harvest Vase</h1>
+                        <h2>by studio and friends</h2>
+                        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional
+                            objects.
+                            The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+                    </div>
+                    <div class="product-price-btn">
+                        <p><span>78</span>$</p>
+                        <button type="button">buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="product-img">
+                    <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+                </div>
+                <div class="product-info">
+                    <div class="product-text">
+                        <h1>Harvest Vase</h1>
+                        <h2>by studio and friends</h2>
+                        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional
+                            objects.
+                            The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+                    </div>
+                    <div class="product-price-btn">
+                        <p><span>78</span>$</p>
+                        <button type="button">buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
