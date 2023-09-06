@@ -189,7 +189,7 @@
 
 
     <!-- Our Services -->
-    <div class="Our-services">
+    <div class="Our-services reveal fade-right">
         <div class="Our-services-container">
             <div class="our-services-main">
                 <div class="our-services-items">
@@ -254,7 +254,7 @@
 
     <!------------------------------------------------------------------ updates here---------------------------------------------------------->
     <!-- Updates Here-->
-    <div class="updates spad">
+    <div class="updates spad reveal fade-left">
         <div class="container">
             <div class="updates-main">
                 <div class="updates-items" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -501,7 +501,7 @@
     </div>
     <!--Logo Slider sections-end-->
     <!-----------------------------------------------------------Footer Section start-------------------------------------------->
-    <footer class="page-footer">
+    <footer class="page-footer reveal fade-bottom">
         <div class="container">
             <div class="row row-1">
                 <div class="col-lg-3 py-3">
@@ -557,7 +557,7 @@
 
             <div class="row mt-4">
                 <div class="col-md-6">
-                    <p><span>Copyright 2023</span>. This template is designed by Viral Devmurari</p>
+                    <p><span>Copyright 2023</span> All rights are reserved by Social Sparsh</p>
                 </div>
                 <div class="col-md-6 text-right">
                     <div class="sosmed-button">
@@ -746,6 +746,22 @@
         window.addEventListener('scroll', startCounters, {
             once: true
         });
+        // scroll reveal-------------------------------------------------------------------------- 
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
     </script>
 </body>
 

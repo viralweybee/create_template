@@ -1,145 +1,242 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Harvest vase</title>
-    <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi"
-        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        .wrapper {
+        @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Asap", sans-serif;
+        }
+
+        /* body {
+            background: #42455a;
+        } */
+
+        section {
+            min-height: 100vh;
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
-        .wrapper .container {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 60px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+       
+
+        section .container {
+            margin: 100px;
         }
 
-        .product-img img {
-            object-fit: cover;
+        section h1 {
+            font-size: 3rem;
+            margin: 20px;
         }
 
-        .product-info {
-            width: 327px;
-            height: 420px;
-        }
-
-        .product-text {
+        section h2 {
+            font-size: 40px;
             text-align: center;
-        }
-
-        .product-price-btn {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .product-text h2 {
-            color: grey;
-            font-size: 16px;
-            padding: 0;
-            margin: 0;
-        }
-
-        .product-text h1 {
-            margin-bottom: 0;
-        }
-
-        .product-text p {
-            margin-top: 50px;
-        }
-
-        .product-price-btn {
-            height: 60px;
-            width: 327px;
-            margin-top: 17px;
-        }
-
-        .product-price-btn p {
-            top: -13px;
-            height: 50px;
-            font-family: 'Trocchi', serif;
-            margin: 0 0 0 38px;
-            font-size: 28px;
-            font-weight: lighter;
-            color: #474747;
-        }
-
-        span {
-            display: inline-block;
-            height: 50px;
-            font-family: 'Suranna', serif;
-            font-size: 34px;
-        }
-
-        .product-price-btn button {
-            height: 50px;
-            width: 176px;
-            margin: 10px 40px 0 16px;
-            box-sizing: border-box;
-            border: transparent;
-            border-radius: 60px;
-            font-family: 'Raleway', sans-serif;
-            font-size: 14px;
-            font-weight: 500;
             text-transform: uppercase;
-            letter-spacing: 0.2em;
-            color: #ffffff;
-            background-color: #9cebd5;
-            cursor: pointer;
-            outline: none;
         }
 
-        .product-price-btn button:hover {
-            background-color: #79b0a1;
+        section .text-container {
+            display: flex;
+        }
+
+        section .text-container .text-box {
+            margin: 20px;
+            padding: 20px;
+            background: #00c2cb;
+        }
+
+        section .text-container .text-box h3 {
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 900px) {
+            section h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            section .text-container {
+                flex-direction: column;
+            }
+        }
+
+        .reveal {
+            position: relative;
+            opacity: 0;
+        }
+
+        .reveal.active {
+            opacity: 1;
+        }
+
+        .active.fade-bottom {
+            animation: fade-bottom 0.8s ease-in;
+        }
+
+        .active.fade-left {
+            animation: fade-left .8s ease-in;
+        }
+
+        .active.fade-right {
+            animation: fade-right .8s ease-in;
+        }
+
+        @keyframes fade-bottom {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-left {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-right {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="parent">
-        <div class="wrapper">
-            <div class="container">
-                <div class="product-img">
-                    <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+    <section>
+        <h1>Scroll Down to Reveal Elements &#8595;</h1>
+    </section>
+    <section>
+        <div class="container reveal fade-bottom">
+            <h2>Caption</h2>
+            <div class="text-container">
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
                 </div>
-                <div class="product-info">
-                    <div class="product-text">
-                        <h1>Harvest Vase</h1>
-                        <h2>by studio and friends</h2>
-                        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional
-                            objects.
-                            The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-                    </div>
-                    <div class="product-price-btn">
-                        <p><span>78</span>$</p>
-                        <button type="button">buy now</button>
-                    </div>
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
                 </div>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="container">
-                <div class="product-img">
-                    <img src="http://bit.ly/2tMBBTd" height="420" width="327">
-                </div>
-                <div class="product-info">
-                    <div class="product-text">
-                        <h1>Harvest Vase</h1>
-                        <h2>by studio and friends</h2>
-                        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional
-                            objects.
-                            The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-                    </div>
-                    <div class="product-price-btn">
-                        <p><span>78</span>$</p>
-                        <button type="button">buy now</button>
-                    </div>
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section>
+        <div class="container reveal fade-left">
+            <h2>Caption</h2>
+            <div class="text-container">
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container reveal fade-right">
+            <h2>Caption</h2>
+            <div class="text-container">
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+    </script>
 </body>
 
 </html>
