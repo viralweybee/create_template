@@ -204,21 +204,32 @@ svg {
 }
 
 .mySlides {
+    position: relative;
     display: none
 }
 
-.slideshow-container {
-    /* width: auto; */
-    position: relative;
+.slider-content {
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    background-color: var(--white);
+    opacity: 0.8;
+    border-radius: 20px;
 }
 
-/* Next & previous buttons */
+.slider-content .title {
+    font-size: 40px;
+}
+
+.slider-content .decs {
+    font-size: 28px;
+}
+
 .prev,
 .next {
     cursor: pointer;
     position: absolute;
     top: 39%;
-    /* width: auto; */
     padding: 16px;
     color: var(--white);
     background-color: var(--fourth-color);
@@ -227,17 +238,17 @@ svg {
     transition: 0.6s ease;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 4px;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 
 .text {
     border-radius: 30px;
@@ -250,29 +261,16 @@ svg {
     font-size: 28px;
 }
 
-.text span {
+.text .title {
     font-size: 40px;
 }
 
-.text-container {
+/* .slider-content {
     display: flex;
-}
+} */
 
-.dot {
-    cursor: pointer;
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: none;
-    transition: background-color 0.6s ease;
-}
 
-.active,
-.dot:hover {
-    background-color: #494B55;
-}
+
 
 /* animation  */
 .fade {
@@ -304,27 +302,32 @@ svg {
 
 /* On smaller screens, decrease text size */
 
-@media only screen and (max-width: 500px) {
-    .text-container {
+@media (max-width: 500px) {
+    .slider-content {
         display: none;
     }
 
     .pics {
         height: 50vh;
     }
-
+    .slider1{
+        height: 50vh;
+    }
     .prev,
     .next {
         /* width: auto; */
         padding: 6px;
     }
 }
-
-@media only scren and(min-width: 401px)and(max-width: 900px) {
-    .text {
-        font-size: 16px
+@media (min-width:501px ) and (max-width:900px){
+    .slider-content .title{
+        font-size: 28px;
+    }
+    .slider-content .decs{
+        font-size: 16px;
     }
 }
+
 
 .pics {
     border: 1px solid #494B55;
@@ -332,7 +335,9 @@ svg {
     height: 75vh;
     object-fit: cover;
 }
-
+.slider1{
+    height: 75vh;
+}
 /********************************************************** home about section here ********************************************************/
 .about-us {
     margin: 90px 0;
@@ -341,6 +346,7 @@ svg {
 .about-us .container {
     display: flex;
     justify-content: center;
+    height: 364px;
 }
 
 .about-us-inside {
@@ -500,6 +506,7 @@ h1 {
     color: var(--fourth-color);
 }
 
+
 .form-row {
     display: flex;
     gap: 8px;
@@ -527,7 +534,12 @@ h1 {
     padding: 8px;
     border-radius: 10px;
 }
-@media (max-width:375){
+@media(max-width: 325px){
+    .newsletter .title{
+        margin: 8px;
+    }
+}
+@media (max-width:375px){
    .title h3{
     font-size: 16px;
    }

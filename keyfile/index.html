@@ -2,9 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    {{GAtag}}
+    {{FacebookPixelCode}}
+    <meta charset="utf-8">
+    <title>{{SiteTitle}} - {{KeyLine}}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="{{SiteTitle}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow " />
+    <link rel="canonical" href="{{Site-Url}}" />
+    <Meta name="language" content="English" />
+    <meta name="title" content="{{SiteTitle}} - {{KeyLine}}">
+    <meta name="description" content="{{SiteTitle}} - {{HomePageDescription}}" />
+    <meta name="keywords" content="{{HomePageKeyword}}" />
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{SiteTitle}} - {{KeyLine}}" />
+    <meta property="og:description" content="{{SiteTitle}} - {{HomePageDescription}}" />
+    <meta property="og:image" content="{{Logo}}" />
+    <meta property="og:url" content="{{Site-Url}}" />
+    <meta property="og:site_name" content="{{SiteTitle}}" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="{{SiteTitle}}" />
+    <meta name="twitter:title" content="{{SiteTitle}} - {{KeyLine}}" />
+    <meta name="twitter:description" content="{{SiteTitle}} - {{HomePageDescription}}" />
+    <meta name="twitter:image" content="{{Logo}}" />
+
+    <link rel="icon" type="image/x-icon" href="{{Favicon}}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
         body {
             background-color: var(--white);
@@ -33,6 +62,10 @@
             width: 100%;
         }
 
+        .slider1 {
+            height: 75vh;
+        }
+
         #slide {
             width: 100%;
         }
@@ -46,7 +79,6 @@
             position: absolute;
             top: 70%;
             left: 2%;
-            /* border: 1px solid black; */
             background-color: var(--white);
             opacity: 0.8;
             border-radius: 20px;
@@ -60,13 +92,11 @@
             font-size: 28px;
         }
 
-        /* Next & previous buttons */
         .prev,
         .next {
             cursor: pointer;
             position: absolute;
             top: 39%;
-            /* width: auto; */
             padding: 16px;
             color: var(--white);
             background-color: var(--fourth-color);
@@ -75,13 +105,11 @@
             transition: 0.6s ease;
         }
 
-        /* Position the "next button" to the right */
         .next {
             right: 4px;
             border-radius: 3px 0 0 3px;
         }
 
-        /* On hover, add a black background color with a little bit see-through */
         .prev:hover,
         .next:hover {
             background-color: rgba(0, 0, 0, 0.8);
@@ -103,14 +131,6 @@
             font-size: 40px;
         }
 
-        /* .slider-content {
-            display: flex;
-        } */
-
-        
-
-
-        /* animation  */
         .fade {
             -webkit-animation-name: fade;
             -webkit-animation-duration: 2s;
@@ -138,8 +158,6 @@
             }
         }
 
-        /* On smaller screens, decrease text size */
-
         @media only screen and (max-width: 500px) {
             .slider-content {
                 display: none;
@@ -148,15 +166,14 @@
             .pics {
                 height: 50vh;
             }
-
+            .slider1{
+                height: 50vh;
+            }
             .prev,
             .next {
-                /* width: auto; */
                 padding: 6px;
             }
         }
-
-        
 
         .pics {
             border: 1px solid #494B55;
@@ -164,54 +181,114 @@
             height: 75vh;
             object-fit: cover;
         }
+
+        /* About us css-------------------------------------------------------------------------------------------- */
+        .about-us {
+            margin: 90px 0;
+        }
+
+        .about-us .container {
+            display: flex;
+            justify-content: center;
+            height: 364px;
+        }
+
+        .about-us-inside {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .decs {
+            font-size: 18px;
+        }
+
+        .about-us-content {
+            padding-top: 0;
+            width: 540px;
+        }
+
+        .title p {
+            margin-top: 0;
+            font-size: 46px;
+        }
+
+        .about-us-img img {
+            border-radius: 15px;
+        }
+
+        /* Responsive  */
+        @media (max-width:550px) {
+            .about-us-img img {
+                width: 300px;
+                height: 250px;
+            }
+
+            .about-us-content {
+                width: 300px;
+            }
+        }
     </style>
+    {{Style}}
+    {{Script}}
 </head>
 
-<body>
-    <div class="slider1">
-        <div class="ss-container">
-            <div class="mySlides fade" itemprop="image">
-                <img src="images/slider-1.jpg" srcset="images/slider-1.jpg 480w, images/slider-1.jpg 800w"
-                    sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" class="pics" />
+<body itemscope="" itemtype="http://schema.org/LocalBusiness">
+    <!--Header sections-->
+    {{Header}}
+    <!--Header sections-end-->
+
+    <!-- Main Slider Here-->
+    <div class="slider1 main-slider">
+        <div class="ss-container slider-items single-item home-slide-item">
+            <div class="mySlides fade carousel-item" itemprop="image">
+                <img src="{{SliderImage}}" srcset="{{SliderImageSrcSet}}" alt="{{SliderTitle}}" class="pics" />
                 <div class="slider-content">
-                    <div class="title">hellojfslkdjf lksjdflksdjf lksjdlkjsd</div>
-                    <p class="decs">slider description for the slide show</p>
-                </div>
-            </div>
-            <div class="mySlides fade" itemprop="image">
-                <img src="images/slider-2.jpg" srcset="images/slider-2.jpg 480w, images/slider-2.jpg 800w"
-                    sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" class="pics" />
-                <div class="slider-content">
-                    <div class="title">Slider 2 title </div>
-                    <p class="decs">Slider 2 text of paragraph</p>
-                </div>
-            </div>
-            <div class="mySlides fade" itemprop="image">
-                <img src="images/slider-3.jpg" srcset="images/slider-3.jpg 480w, images/slider-3.jpg 800w"
-                    sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" class="pics" />
-                <div class="slider-content">
-                    <div class="title">Slider 3 title </div>
-                    <p class="decs">Slider 2 text of paragraph</p>
-                </div>
-            </div>
-            <div class="mySlides fade" itemprop="image">
-                <img src="images/slider-2.jpg" srcset="images/slider-2.jpg 480w, images/slider-2.jpg 800w"
-                    sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" class="pics" />
-                <div class="slider-content">
-                    <div class="title">Slider 4 title </div>
-                    <p class="decs">Slider 2 text of paragraph</p>
+                    <div class="title">{{SliderTitle}}</div>
+                    <p class="decs">{{SliderDescription}}</p>
                 </div>
             </div>
             <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
             <button class="next" onclick="plusSlides(1)">&#10095;</button>
         </div>
     </div>
+    <!-- Main Slider Here -->
+
+    <!-- Home About Section Here-->
+    <br>
+    <div class="about-us spad">
+        <div class="container">
+            <div class="about-us-inside">
+                <div class="about-us-img">
+                    <img src="{{HomeImage}}" srcset="{{HomeImage1SrcSet}}"
+                        sizes="(max-width: 600px) 480px, 800px" alt="{{HomeTitle}}" width="540px" height="360px"
+                         itemprop="image">
+                </div>
+                <div class="about-us-content">
+                    <div class="title">
+                        <p>{{HomeTitle}}</p>
+                    </div>
+                    <div class="decs">
+                        <p>{{HomeDescription}}</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home About Section End-->
+    
+
+
+
+
     <script>
+        // slider script---------------------------------------
         var slideIndex = 0;
         showSlides();
-        //add the global timer variable
         var slides, dots, timer;
-
         function showSlides() {
             var i;
             slides = document.getElementsByClassName("mySlides");
@@ -226,12 +303,10 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-            //put the timeout in the timer variable
-            timer = setTimeout(showSlides, 3000); // Change image every 8 seconds
+            timer = setTimeout(showSlides, 3000);
         }
 
         function plusSlides(position) {
-            //clear/stop the timer
             clearTimeout(timer);
             slideIndex += position;
             if (slideIndex > slides.length) { slideIndex = 1 }
@@ -244,16 +319,13 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-
             timer = setTimeout(showSlides, 2000);
         }
 
         function currentSlide(index) {
-            //clear/stop the timer
             clearTimeout(timer);
             if (index > slides.length) { index = 1 }
             else if (index < 1) { index = slides.length }
-            //set the slideIndex with the index of the function
             slideIndex = index;
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
@@ -263,7 +335,6 @@
             }
             slides[index - 1].style.display = "block";
             dots[index - 1].className += " active";
-            //create a new timer
             timer = setTimeout(showSlides, 2000);
         }
 
