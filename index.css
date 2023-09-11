@@ -346,7 +346,7 @@ svg {
 .about-us .container {
     display: flex;
     justify-content: center;
-    height: 364px;
+    /* height: 364px; */
 }
 
 .about-us-inside {
@@ -387,11 +387,11 @@ svg {
 }
 
 /******************************************************************counter css here  ******************************************************/
-.counter {
+.counter2 {
     padding-top: 10px;
 }
 
-.counter h2 {
+.counter2 h2 {
     font-size: 36px;
 }
 
@@ -517,8 +517,14 @@ h1 {
     width: 20%;
     height: 3vh;
     border-radius: 7px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
 }
 
+::placeholder{
+color: white;
+}
 .form-row input:focus {
     outline: 2px solid var(--fourth-color);
 }
@@ -860,7 +866,7 @@ h1 {
     padding-top: 14px;
 }
 
-/* copy right */
+
 .sosmed-button a {
     text-decoration: none;
     padding-left: 10px;
@@ -876,7 +882,6 @@ h1 {
 }
 
 .sosmed-button {
-    /* border: 1px solid black; */
     width: 230px;
 }
 

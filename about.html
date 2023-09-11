@@ -99,7 +99,7 @@
                 <div class="about-us-img">
                     <img src="images/About-us.jpg" srcset="images/About-us.jpg 480w, images/About-us.jpg 800w"
                         sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" width="540px" height="360px"
-                        alt="Social-Parsh" itemprop="image">
+                        itemprop="image">
                 </div>
                 <div class="about-us-content">
                     <div class="title">
@@ -157,51 +157,140 @@
     </div>
     <!-- Our mission section end -->
     <!-- slider section 1 -->
-    <h1>Meet our Team</h1>
-    <div class="slider">
-        <input type="radio" name="testimonial" id="t-1">
-        <input type="radio" name="testimonial" id="t-2">
-        <input type="radio" name="testimonial" id="t-3" checked>
-        <input type="radio" name="testimonial" id="t-4">
-        <input type="radio" name="testimonial" id="t-5">
-
-        <div class="testimonials">
-            <label class="item" for="t-1">
-                <img src="images/profile1.jpg" width="280px" height="327px" alt="proflie1-img">
-            </label>
-            <label class="item" for="t-2">
-                <img src="images/profile2.jpg" width="280px" height="327px" alt="proflie2-img">
-            </label>
-            <label class="item" for="t-3">
-                <img src="images/profile3.jpg" width="280px" height="327px" alt="proflie3-img">
-            </label>
-            <label class="item" for="t-4">
-                <img src="images/profile4.jpg" width="280px" height="327px" alt="proflie4-img">
-            </label>
-            <label class="item" for="t-5">
-                <img src="images/profile5.jpg" width="280px" height="327px" alt="proflie5-img">
-            </label>
-
-        </div>
-        <br />
-        <div class="dots">
-            <label for="t-1"></label>
-            <label for="t-2"></label>
-            <label for="t-3"></label>
-            <label for="t-4"></label>
-            <label for="t-5"></label>
+    <div class="our-team">
+        <h2 class="title">Meet Our team</h2>
+        <div class="container">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left">&#10094;</i>
+                <ul class="carousel team-member" itemprop="founder" itemscope itemtype="http://schema.org/Person">
+                    <li class="card">
+                        <div class="img"><img src="images/profile1.jpg"  width="100%" height="100%"   alt="img" draggable="false"></div>
+                        <h2>Blanche Pearson</h2>
+                        <span>Sales Manager</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/profile2.jpg" width="100%" height="100%"alt="img" draggable="false"></div>
+                        <h2>Joenas Brauers</h2>
+                        <span>Web Developer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/profile3.jpg" width="100%" height="100%"alt="img" draggable="false"></div>
+                        <h2>Lariach French</h2>
+                        <span>Online Teacher</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/profile4.jpg"  width="100%" height="100%"alt="img" draggable="false"></div>
+                        <h2>James Khosravi</h2>
+                        <span>Freelancer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/profile5.jpg" width="100%" height="100%"alt="img" draggable="false"></div>
+                        <h2>Kristina Zasiadko</h2>
+                        <span>Bank Manager</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/profile6.jpg" width="100%" height="100%"alt="img" draggable="false"></div>
+                        <h2>Donald Horton</h2>
+                        <span>App Designer</span>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right">&#10095;</i>
+            </div>
         </div>
     </div>
     <!-- slider section end -->
     <!-- slider section 2 start-->
-    <div class="slider-2">
-        <h1>Our Testimonial</h1>
-        <div class="wrapper">
-            <div class="testimonial-container" id="testimonial-container"></div>
-            <button id="prev">&lt;</button>
-            <button id="next">&gt;</button>
+    <hr>
+    <section class="section" id="section--3">
+        <h2 class="title">
+            Our Testimonial
+        </h2>
+        <div class="slider">
+            <div class="slide slide--1">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">Best financial decision ever!</h5>
+                    <blockquote class="testimonial__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Accusantium quas quisquam non? Quas voluptate nulla minima
+                        deleniti optio ullam nesciunt, numquam corporis et asperiores
+                        laboriosam sunt, praesentium 
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <img src="images/profile9.jpg" width="100px" height="100px"
+                            alt="" class="testimonial__photo" />
+                        <h6 class="testimonial__name">Aarav Lynn</h6>
+                        <p class="testimonial__location">San Francisco, USA</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="slide slide--2">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        The last step to becoming a complete minimalist
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        Quisquam itaque deserunt ullam, quia ea repellendus provident,
+                        ducimus neque ipsam modi voluptatibus doloremque, corrupti
+                        laborum. Incidunt numquam per
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <img src="images/profile8.jpg" width="100px" height="100%px"
+                            alt="" class="testimonial__photo" />
+                        <h6 class="testimonial__name">Miyah Miles</h6>
+                        <p class="testimonial__location">London, UK</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="slide slide--3">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        Finally free from old-school banks
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+                        incidunt commodi architecto numquam omnis nulla autem,
+                        necessitatibus blanditiis modi similique quidem. Odio aliquam
+                        culpa dicta beatae quod maiores
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <img src="images/profile7.jpg" width="100px" height="100px"
+                            alt="" class="testimonial__photo" />
+                        <h6 class="testimonial__name">Francisco Gomes</h6>
+                        <p class="testimonial__location">Lisbon, Portugal</p>
+                    </address>
+                </div>
+            </div>
+            <div class="slide slide--3">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        Four
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+                        incidunt commodi architecto numquam omnis nulla autem,
+                        necessitatibus blanditiis modi similique quidem. Odio aliquam
+                        culpa dicta beatae quod maiores 
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <img src="images/profile6.jpg" width="100px" height="100px"
+                            alt="" class="testimonial__photo" />
+                        <h6 class="testimonial__name">Francisco Gomes</h6>
+                        <p class="testimonial__location">Lisbon, Portugal</p>
+                    </address>
+                </div>
+            </div>
+
+            <!-- <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+          <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+          <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+          <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+            <div class="dots"></div>
         </div>
-    </div>
+    </section>
     <!-- slider section 2 end -->
     <!-- footer -->
     <footer class="page-footer">
@@ -257,7 +346,7 @@
             </div>
 
             <!-- <hr> -->
-            
+
             <div class="row mt-4">
                 <div class="col-md-6">
                     <p><span>Copyright 2023</span> All rights are reserved by Social Sparsh</p>
@@ -357,66 +446,164 @@
         window.onscroll = () => {
             this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
         }
+        // slide 1--------------------------------------------------------------------------------------------------------
+        const wrapper = document.querySelector(".wrapper");
+        const carousel = document.querySelector(".carousel");
+        const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+        const arrowBtns = document.querySelectorAll(".wrapper i");
+        const carouselChildrens = [...carousel.children];
+        let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+        // Get the number of cards that can fit in the carousel at once
+        let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+        // Insert copies of the last few cards to beginning of carousel for infinite scrolling
+        carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+            carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+        });
+        // Insert copies of the first few cards to end of carousel for infinite scrolling
+        carouselChildrens.slice(0, cardPerView).forEach(card => {
+            carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+        });
+        // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
+        // Add event listeners for the arrow buttons to scroll the carousel left and right
+        arrowBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+            });
+        });
+        const dragStart = (e) => {
+            isDragging = true;
+            carousel.classList.add("dragging");
+            // Records the initial cursor and scroll position of the carousel
+            startX = e.pageX;
+            startScrollLeft = carousel.scrollLeft;
+        }
+        const dragging = (e) => {
+            if (!isDragging) return; // if isDragging is false return from here
+            // Updates the scroll position of the carousel based on the cursor movement
+            carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+        }
+        const dragStop = () => {
+            isDragging = false;
+            carousel.classList.remove("dragging");
+        }
+        const infiniteScroll = () => {
+            // If the carousel is at the beginning, scroll to the end
+            if (carousel.scrollLeft === 0) {
+                carousel.classList.add("no-transition");
+                carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+                carousel.classList.remove("no-transition");
+            }
+            // If the carousel is at the end, scroll to the beginning
+            else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+                carousel.classList.add("no-transition");
+                carousel.scrollLeft = carousel.offsetWidth;
+                carousel.classList.remove("no-transition");
+            }
+            // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+            clearTimeout(timeoutId);
+            if (!wrapper.matches(":hover")) autoPlay();
+        }
+        const autoPlay = () => {
+            if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+            // Autoplay the carousel after every 2500 ms
+            timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 1500);
+        }
+        autoPlay();
+        carousel.addEventListener("mousedown", dragStart);
+        carousel.addEventListener("mousemove", dragging);
+        document.addEventListener("mouseup", dragStop);
+        carousel.addEventListener("scroll", infiniteScroll);
+        wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+        wrapper.addEventListener("mouseleave", autoPlay);
+
         // slider 2 section 
         //Testimonial Data
-        const testimonials = [
-            {
-                name: "Eva Sawyer",
-                job: "CEO, Fashworks",
-                image: "images/profile2.jpg",
-                testimonial:
-                    "Neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur",
-            },
-            {
-                name: "Katey Topaz",
-                job: "Developer, TechCrew",
-                image: "images/profile6.jpg",
-                testimonial:
-                    "Elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla",
-            },
-            {
-                name: "Jae Robin",
-                job: "UI Designer, Affinity Agency",
-                image: "images/profile1.jpg",
-                testimonial:
-                    "Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis",
-            },
-            {
-                name: "Nicola Blakely",
-                job: "CEO,Zeal Wheels",
-                image: "images/profile8.jpg",
-                testimonial:
-                    "Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
-            },
-        ];
+        const slider = function () {
+            const slides = document.querySelectorAll('.slide');
+            const btnLeft = document.querySelector('.slider__btn--left');
+            const btnRight = document.querySelector('.slider__btn--right');
+            const dotContainer = document.querySelector('.dots');
 
-        //Current Slide
-        let i = 0;
-        //Total Slides
-        let j = testimonials.length;
+            let curSlide = 0;
+            const maxSlide = slides.length;
 
-        let testimonialContainer = document.getElementById("testimonial-container");
-        let nextBtn = document.getElementById("next");
-        let prevBtn = document.getElementById("prev");
+            // Functions
+            const createDots = function () {
+                slides.forEach(function (_, i) {
+                    dotContainer.insertAdjacentHTML(
+                        'beforeend',
+                        `<button class="dots__dot" data-slide="${i}"></button>`
+                    );
+                });
+            };
 
-        nextBtn.addEventListener("click", () => {
-            i = (j + i + 1) % j;
-            displayTestimonial();
-        });
-        prevBtn.addEventListener("click", () => {
-            i = (j + i - 1) % j;
-            displayTestimonial();
-        });
+            const activateDot = function (slide) {
+                document
+                    .querySelectorAll('.dots__dot')
+                    .forEach(dot => dot.classList.remove('dots__dot--active'));
 
-        let displayTestimonial = () => {
-            testimonialContainer.innerHTML = `
-    <p>${testimonials[i].testimonial}</p>
-    <img src=${testimonials[i].image}>
-    <h3>${testimonials[i].name}</h3>
-    <h4>${testimonials[i].job}</h4>
-  `;
+                document
+                    .querySelector(`.dots__dot[data-slide="${slide}"]`)
+                    .classList.add('dots__dot--active');
+            };
+
+            const goToSlide = function (slide) {
+                slides.forEach(
+                    (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+                );
+            };
+
+            // Next slide
+            const nextSlide = function () {
+                if (curSlide === maxSlide - 1) {
+                    curSlide = 0;
+                } else {
+                    curSlide++;
+                }
+
+                goToSlide(curSlide);
+                activateDot(curSlide);
+            };
+
+            const prevSlide = function () {
+                if (curSlide === 0) {
+                    curSlide = maxSlide - 1;
+                } else {
+                    curSlide--;
+                }
+                goToSlide(curSlide);
+                activateDot(curSlide);
+            };
+
+            const init = function () {
+                goToSlide(0);
+                createDots();
+
+                activateDot(0);
+            };
+            init();
+
+            // Event handlers
+            btnRight.addEventListener('click', nextSlide);
+            btnLeft.addEventListener('click', prevSlide);
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowLeft') prevSlide();
+                e.key === 'ArrowRight' && nextSlide();
+            });
+
+            dotContainer.addEventListener('click', function (e) {
+                if (e.target.classList.contains('dots__dot')) {
+                    const { slide } = e.target.dataset;
+                    goToSlide(slide);
+                    activateDot(slide);
+                }
+            });
         };
-        window.onload = displayTestimonial;
+        slider(); 
     </script>
 </body>
 

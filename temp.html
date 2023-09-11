@@ -1,273 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            background-color: var(--white);
-            margin: 0;
-            padding: 0;
-            font-family: 'Nunito Sans', sans-serif;
-        }
+        .about-us {
+    margin: 90px 0;
+}
 
-        svg {
-            width: 20px;
-            height: 20px;
-        }
+.about-us .container {
+    display: flex;
+    justify-content: center;
 
-        :root {
-            --primary-color: #040D12;
-            --second-color: #183D3D;
-            --third-color: #5C8374;
-            --fourth-color: #93B1A6;
-            --white: #ffffff;
-            --bgcolor: #f6f9fe;
-            --primary-font: 'Rubik', sans-serif;
-            --second-font: 'Sarabun', sans-serif;
-        }
+}
 
-        .slider1 {
-            width: 100%;
-        }
+.about-us-inside {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
-        #slide {
-            width: 100%;
-        }
+.decs {
+    font-size: 18px;
+}
 
-        .mySlides {
-            position: relative;
-            display: none
-        }
+.about-us-content {
+    padding-top: 0;
+    width: 540px;
+}
 
-        .slider-content {
-            position: absolute;
-            top: 70%;
-            left: 2%;
-            /* border: 1px solid black; */
-            background-color: var(--white);
-            opacity: 0.8;
-            border-radius: 20px;
-        }
+.title p {
+    margin-top: 0;
+    font-size: 46px;
+}
 
-        .slider-content .title {
-            font-size: 40px;
-        }
+.about-us-img img {
+    border-radius: 15px;
+}
 
-        .slider-content .decs {
-            font-size: 28px;
-        }
+/* Responsive  */
+@media (max-width:550px) {
+    .about-us-img img {
+        width: 300px;
+        height: 250px;
+    }
 
-        /* Next & previous buttons */
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 39%;
-            /* width: auto; */
-            padding: 16px;
-            color: var(--white);
-            background-color: var(--fourth-color);
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-        }
+    .about-us-content {
+        width: 300px;
+    }
+}
 
-        /* Position the "next button" to the right */
-        .next {
-            right: 4px;
-            border-radius: 3px 0 0 3px;
-        }
+/******************************************************************counter css here  ******************************************************/
+.counter2 {
+    padding-top: 10px;
+}
 
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
+.counter2 h2 {
+    font-size: 36px;
+}
 
+.counter-1 {
+    background-color: var(--second-color);
+    color: var(--white);
+    text-align: center;
+    height: 200px;
+    width: 100%;
+}
 
-        .text {
-            border-radius: 30px;
-            background-color: var(--white);
-            opacity: 0.6;
-            position: absolute;
-            text-align: center;
-            bottom: 28%;
-            left: 2%;
-            font-size: 28px;
-        }
+@media (max-width:520px) {
+    .counter-1 {
+        height: 400px;
+    }
+}
 
-        .text .title {
-            font-size: 40px;
-        }
+.counter-inside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    font-size: 22px;
+}
 
-        /* .slider-content {
-            display: flex;
-        } */
-
-        
-
-
-        /* animation  */
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 2s;
-            animation-name: fade;
-            animation-duration: 2s;
-        }
-
-        @-webkit-keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        @keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        /* On smaller screens, decrease text size */
-
-        @media only screen and (max-width: 500px) {
-            .slider-content {
-                display: none;
-            }
-
-            .pics {
-                height: 50vh;
-            }
-
-            .prev,
-            .next {
-                /* width: auto; */
-                padding: 6px;
-            }
-        }
-
-        
-
-        .pics {
-            border: 1px solid #494B55;
-            width: 99.90%;
-            height: 75vh;
-            object-fit: cover;
-        }
     </style>
 </head>
-
 <body>
-    <div class="slider1">
-        <div class="ss-container">
-            <div class="mySlides fade" itemprop="image">
-                <img src="images/slider-1.jpg" srcset="images/slider-1.jpg 480w, images/slider-1.jpg 800w"
-                    sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" class="pics" />
-                <div class="slider-content">
-                    <div class="title">hellojfslkdjf lksjdflksdjf lksjdlkjsd</div>
-                    <p class="decs">slider description for the slide show</p>
+    <div class="about-us spad">
+        <div class="container">
+            <div class="about-us-inside">
+                <div class="about-us-img">
+                    <img src="images/About-us.jpg" srcset="images/About-us.jpg 480w, images/About-us.jpg 800w"
+                        sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" width="540px" height="360px"
+                        alt="Social-Parsh" itemprop="image">
+                </div>
+                <div class="about-us-content">
+                    <div class="title">
+                        <p> Welcome to Lorem Ipsum Dolor Sit Armt</p>
+                    </div>
+                    <div class="decs">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
                 </div>
             </div>
-            <div class="mySlides fade" itemprop="image">
-                <img src="images/slider-2.jpg" srcset="images/slider-2.jpg 480w, images/slider-2.jpg 800w"
-                    sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" class="pics" />
-                <div class="slider-content">
-                    <div class="title">Slider 2 title </div>
-                    <p class="decs">Slider 2 text of paragraph</p>
-                </div>
-            </div>
-            <div class="mySlides fade" itemprop="image">
-                <img src="images/slider-3.jpg" srcset="images/slider-3.jpg 480w, images/slider-3.jpg 800w"
-                    sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" class="pics" />
-                <div class="slider-content">
-                    <div class="title">Slider 3 title </div>
-                    <p class="decs">Slider 2 text of paragraph</p>
-                </div>
-            </div>
-            <div class="mySlides fade" itemprop="image">
-                <img src="images/slider-2.jpg" srcset="images/slider-2.jpg 480w, images/slider-2.jpg 800w"
-                    sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" class="pics" />
-                <div class="slider-content">
-                    <div class="title">Slider 4 title </div>
-                    <p class="decs">Slider 2 text of paragraph</p>
-                </div>
-            </div>
-            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-            <button class="next" onclick="plusSlides(1)">&#10095;</button>
         </div>
     </div>
-    <script>
-        var slideIndex = 0;
-        showSlides();
-        //add the global timer variable
-        var slides, dots, timer;
 
-        function showSlides() {
-            var i;
-            slides = document.getElementsByClassName("mySlides");
-            dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            //put the timeout in the timer variable
-            timer = setTimeout(showSlides, 3000); // Change image every 8 seconds
-        }
+    <!-- Home About Section End-->
 
-        function plusSlides(position) {
-            //clear/stop the timer
-            clearTimeout(timer);
-            slideIndex += position;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            else if (slideIndex < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
 
-            timer = setTimeout(showSlides, 2000);
-        }
+    <!-- Counter Number Here-->
+    <div class="counter-1 counter">
+        <div class="counter2 container">
+            <h2>Relative Customer</h2>
+            <div class="counter-inside">
+                <div class="count-up">
+                    <div class="counter-count" data-target="1000">0</div>
+                    <div class="counter-text">Google</div>
+                </div>
+                <div class="count-up">
+                    <div class="counter-count" data-target="500">0</div>
+                    <div class="counter-text">Google</div>
+                </div>
+                <div class="count-up">
+                    <div class="counter-count" data-target="790">0</div>
+                    <div class="counter-text">Google</div>
+                </div>
+                <div class="count-up">
+                    <div class="counter-count" data-target="532">0</div>
+                    <div class="counter-text">Google</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Conter Number End-->
 
-        function currentSlide(index) {
-            //clear/stop the timer
-            clearTimeout(timer);
-            if (index > slides.length) { index = 1 }
-            else if (index < 1) { index = slides.length }
-            //set the slideIndex with the index of the function
-            slideIndex = index;
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[index - 1].style.display = "block";
-            dots[index - 1].className += " active";
-            //create a new timer
-            timer = setTimeout(showSlides, 2000);
-        }
-
-    </script>
 </body>
-
 </html>
