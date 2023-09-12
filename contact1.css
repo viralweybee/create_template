@@ -493,7 +493,7 @@ svg {
   color: white;
 }
 
-.contact_us_6 .map-box {
+/* .contact_us_6  {
   max-width: 800px;
   max-height: 520px;
   width: 100%;
@@ -503,7 +503,7 @@ svg {
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 50%;
-}
+} */
 
 .contact_us_6 .map-part {
   width: 100%;
